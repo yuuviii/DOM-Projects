@@ -1,0 +1,40 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    background-color: #fff;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#container img{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+}
+#container i{
+    color: #f70404;
+    font-size: 70px;
+    position:absolute;
+    top: 200px;
+    right: 80px;
+    opacity: 0.9;
+    transform: translate(-50%,-50%) scale(1);  /* scale(0) for invisible the heart icon it's js not working */
+    visibility: hidden;
+    transition: all ease 0.7s;
+
+}
